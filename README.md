@@ -141,3 +141,51 @@ $ ls /etc/rc3.d/*{apache,php,samba}* | cat
 /etc/rc3.d/K01php7.0-fpm
 /etc/rc3.d/K01samba-ad-dc
 ```
+
+```
+$ df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2       9.3G  1.8G  7.1G  20% /
+
+$ sudo apt-get clean; sudo apt-get update >/dev/null
+$ df -h /
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2       9.3G  1.7G  7.2G  19% /
+```
+
+## Detailed system info
+
+```
+$ inxi -c0 -v5
+System:    Host: libellio Kernel: 4.4.0-57-generic i686 (32 bit gcc: 5.4.0)
+           Console: tty 0 Distro: Ubuntu 16.04 xenial
+Machine:   System: VMware product: VMware Virtual Platform
+           Mobo: Intel model: 440BX Desktop Reference Platform
+           Bios: Phoenix v: 6.00 date: 07/02/2015
+CPU:       Single core Intel Core i7-4700MQ (-UP-) cache: 6144 KB
+           flags: (lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3) bmips: 4789 speed: 2394 MHz (max)
+Memory:    No dmidecode memory data: try newer kernel.
+Graphics:  Card: VMware SVGA II Adapter bus-ID: 00:0f.0
+           Display Server: N/A driver: N/A
+           tty size: 80x43 Advanced Data: N/A out of X
+Audio:     Card Ensoniq ES1371 / Creative Labs CT2518/ES1373
+           driver: snd_ens1371 port: 2000 bus-ID: 02:01.0
+           Sound: Advanced Linux Sound Architecture v: k4.4.0-57-generic
+Network:   Card: VMware VMXNET3 Ethernet Controller
+           driver: vmxnet3 v: 1.4.7.0-k port: 5000 bus-ID: 0b:00.0
+           IF: ens192 state: up speed: 10000 Mbps duplex: full
+           mac: 00:50:56:09:f0:11
+Drives:    HDD Total Size: 10.7GB (20.8% used)
+           ID-1: /dev/sda model: VMware_Virtual_S size: 10.7GB temp: 0C
+           Optical: No optical drives detected.
+Partition: ID-1: / size: 9.3G used: 1.7G (19%) fs: ext4 dev: /dev/sda2
+           label: LIBELLIO-SYSTEM uuid: afcea285-63f2-40fb-8dbc-ce144642cc14
+           ID-2: swap-1 size: 0.54GB used: 0.00GB (0%) fs: swap dev: /dev/sda1
+           label: LIBELLIO-SWAP uuid: f7a387a8-9a0b-4379-abc3-87735ad645a8
+RAID:      No RAID devices: /proc/mdstat, md_mod kernel module present
+Sensors:   System Temperatures: cpu: 100.0C mobo: N/A
+           Fan Speeds (in rpm): cpu: N/A
+Info:      Processes: 178 Uptime: 6 min Memory: 93.5/492.9MB
+           Init: systemd runlevel: 5 Gcc sys: 5.4.0
+           Client: Shell (bash 4.3.461) inxi: 2.2.35
+```
