@@ -1,6 +1,6 @@
 # libellio
 
-> [Libellus continentem] Bruti senis oscitationes de capsa miseri libellionis emptu[s] plus minus asse Gaiano.
+> [Libellus continens] Bruti senis oscitationes de capsa miseri libellionis emptu[s] plus minus asse Gaiano.
 
 > (P. Papinius Statius, Silvae, 4.9 "Hendecasyllabi iocosi ad Plotium Grypum")
 
