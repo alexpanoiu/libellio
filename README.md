@@ -189,3 +189,36 @@ Info:      Processes: 178 Uptime: 6 min Memory: 93.5/492.9MB
            Init: systemd runlevel: 5 Gcc sys: 5.4.0
            Client: Shell (bash 4.3.461) inxi: 2.2.35
 ```
+
+## Firewall
+
+```
+22/tcp SSH
+   68/udp DHCP
+   80/tcp HTTP
+  137/udp SMB
+  138/udp SMB
+  139/tcp SMB
+  443/tcp HTTPS
+  445/tcp SMB
+ 9091/tcp BT Remote
+24469/tcp BT Data
+24469/udp BT Data
+```
+
+```
+sudo ufw reset
+sudo ufw allow from 0.0.0.0/0 to any port 22 proto tcp
+sudo ufw enable
+sudo ufw allow from 0.0.0.0/0 to any port 68 proto udp
+sudo ufw allow from 0.0.0.0/0 to any port 80 proto tcp
+sudo ufw allow from 192.168.0.0/16 to any port 137 proto udp
+sudo ufw allow from 192.168.0.0/16 to any port 138 proto udp
+sudo ufw allow from 192.168.0.0/16 to any port 139 proto tcp
+sudo ufw allow from 0.0.0.0/0 to any port 443 proto tcp
+sudo ufw allow from 192.168.0.0/16 to any port 445 proto tcp
+sudo ufw allow from 192.168.0.0/16 to any port 9091 proto tcp
+sudo ufw allow from 0.0.0.0/0 to any port 24469 proto tcp
+sudo ufw allow from 0.0.0.0/0 to any port 24469 proto udp
+sudo ufw status numbered
+```
