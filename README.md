@@ -1,13 +1,20 @@
-# libellio
+libellio
+========
 
-> [Libellus continens] *Bruti senis oscitationes de capsa miseri libellionis emptu[s] plus minus asse Gaiano.*\
+> [Libellus continens] *Bruti senis oscitationes de capsa miseri libellionis
+  emptu[s] plus minus asse Gaiano.*\
   (P. Papinius Statius, Silvae, 4.9 *"Hendecasyllabi iocosi ad Plotium Grypum"*)
 
-- [Latin text](http://www.perseus.tufts.edu/hopper/text?doc=Stat.%20Silv.%204.9.21&lang=original) at [Perseus](http://www.perseus.tufts.edu/hopper/) Digital Library
-- [Translation](https://books.google.ro/books?id=8XVhb9IAJloC&pg=PA147) by Betty Rose Nagle at [https://books.google.com/](Google Books): \
-  *"the yawn inducing remarks of old Brutus, off the shelf of some poor bookseller, purchased for more or less an as issued by Gaius [Caligula]"*.
+- [Latin text](
+     https://www.perseus.tufts.edu/hopper/text?doc=Stat.%20Silv.%204.9.21) at
+     [Perseus](http://www.perseus.tufts.edu/hopper/) Digital Library
+- [Translation](https://books.google.ro/books?id=8XVhb9IAJloC&pg=PA147) by Betty
+  Rose Nagle at [https://books.google.com/](Google Books): \
+  *"the yawn inducing remarks of old Brutus, off the shelf of some poor
+  bookseller, purchased for more or less an as issued by Gaius [Caligula]"*.
 
-## System information
+System information
+------------------
 
 ```
 $ uname -smorv
@@ -29,7 +36,8 @@ Mem:            492          57         167           2         267         405
 Swap:           510           0         510
 ```
 
-## Locales
+Locales
+-------
 
 ```
 $ sudo dpkg-reconfigure locales
@@ -45,7 +53,8 @@ en_AU.utf8      en_IE.utf8      en_US.utf8      fr_CH.utf8
 en_BW.utf8      en_IN.utf8      en_ZA.utf8      fr_FR.utf8
 ```
 
-## Install software
+Install software
+----------------
 
 ```
 sudo apt-get -y install build-essential
@@ -153,7 +162,8 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/sda2       9.3G  1.7G  7.2G  19% /
 ```
 
-## Detailed system info
+Detailed system info
+--------------------
 
 ```
 $ inxi -c0 -v5
@@ -190,7 +200,8 @@ Info:      Processes: 178 Uptime: 6 min Memory: 93.5/492.9MB
            Client: Shell (bash 4.3.461) inxi: 2.2.35
 ```
 
-## Firewall
+Firewall
+--------
 
 ```
 22/tcp SSH
