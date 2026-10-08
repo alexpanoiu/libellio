@@ -7,9 +7,9 @@ libellio
 
 - [Latin text](
      https://www.perseus.tufts.edu/hopper/text?doc=Stat.%20Silv.%204.9.21) at
-     [Perseus](http://www.perseus.tufts.edu/hopper/) Digital Library
+     [Perseus](http://www.perseus.tufts.edu/hopper/) Digital Library.
 - [Translation](https://books.google.ro/books?id=8XVhb9IAJloC&pg=PA147) by Betty
-  Rose Nagle at [https://books.google.com/](Google Books): \
+  Rose Nagle at [Google Books](https://books.google.com/): \
   *"the yawn inducing remarks of old Brutus, off the shelf of some poor
   bookseller, purchased for more or less an as issued by Gaius [Caligula]"*.
 
